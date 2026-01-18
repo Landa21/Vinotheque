@@ -1,0 +1,13 @@
+import './App.css'
+
+function App() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-black">
+      <h1 className="text-white text-4xl tracking-widest">
+        VINOTHÈQUE
+      </h1>
+    </div>
+  );
+}
+
+export default App;
