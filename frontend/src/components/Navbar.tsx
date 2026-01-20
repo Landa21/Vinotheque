@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="w-full z-40 flex items-center justify-between px-10 py-6 text-primary">
+    <nav className="absolute top-[40px] left-0 w-full z-40 flex items-center justify-between px-10 py-6 text-white bg-transparent">
       {/* Brand */}
       <div className="text-lg tracking-[0.3em] font-light">
         VINOTHÈQUE

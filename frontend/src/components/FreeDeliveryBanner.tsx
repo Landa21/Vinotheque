@@ -7,11 +7,11 @@ const FreeDeliveryBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="w-full bg-accent text-primary text-xs uppercase tracking-widest flex items-center justify-center py-3 border-b border-border">
+    <div className="w-full bg-accent text-primary text-xs uppercase tracking-widest flex items-center justify-center py-3 border-b border-white/10">
       {/* Icon + Text */}
       <div className="flex items-center space-x-2 group">
-        <Truck className="w-5 h-5 text-primary transition duration-300 group-hover:text-accentHover" />
-        <span className="transition duration-300 group-hover:text-accentHover">
+        <Truck className="w-5 h-5 text-white" />
+        <span className="text-white">
           Free Delivery on Orders Over R1000
         </span>
       </div>
