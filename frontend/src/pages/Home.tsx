@@ -23,7 +23,7 @@ const Home = () => {
 
                     {/* Right Feature (e.g. White Wines) */}
                     <div className="relative group cursor-pointer h-[80vh]">
-                        <img src="https://images.unsplash.com/photo-1572569940066-647e4524c53c?auto=format&fit=crop&q=80" alt="White Wine" className="w-full h-full object-cover" />
+                        <img src="/images/white_wine_feature.png" alt="White Wine" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                             <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-4 tracking-widest">WHITE WINES</h3>
@@ -89,7 +89,7 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1535208239377-6a5d7c805214?auto=format&fit=crop&q=80" alt="Limited Edition" className="w-full h-full object-cover" />
+                            <img src="/images/limited_edition_wine.png" alt="Limited Edition" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">LIMITED EDITION</h3>
                             </div>
