@@ -1,14 +1,28 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section
-      className="relative w-full h-screen bg-cover bg-center"
-      style={{
-        backgroundImage: "url('https://unsplash.com/photos/MXMs8q2OjeA/download?force=true')",
-      }}
-    >
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Parallax Background Layer */}
+      <div
+        className="absolute -inset-y-20 -inset-x-0 bg-cover bg-center will-change-transform"
+        style={{
+          backgroundImage: "url('https://unsplash.com/photos/MXMs8q2OjeA/download?force=true')",
+          transform: `translateY(${scrollY * 0.4}px)`,
+        }}
+      ></div>
+
       {/* Optional dark overlay for text contrast */}
       <div className="absolute inset-0 bg-black/40"></div>
 

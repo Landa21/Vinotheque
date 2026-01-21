@@ -13,7 +13,7 @@ const Home = () => {
 
                     {/* Left Feature (e.g. Red Wines) */}
                     <div className="relative group cursor-pointer h-[80vh]">
-                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Red Wine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Red Wine" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                             <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-4 tracking-widest">RED WINES</h3>
@@ -23,7 +23,7 @@ const Home = () => {
 
                     {/* Right Feature (e.g. White Wines) */}
                     <div className="relative group cursor-pointer h-[80vh]">
-                        <img src="https://images.unsplash.com/photo-1572569940066-647e4524c53c?auto=format&fit=crop&q=80" alt="White Wine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="https://images.unsplash.com/photo-1572569940066-647e4524c53c?auto=format&fit=crop&q=80" alt="White Wine" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                             <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-4 tracking-widest">WHITE WINES</h3>
@@ -52,7 +52,7 @@ const Home = () => {
 
                     {/* Large Feature - Left (2/3) */}
                     <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&q=80" alt="Rose Wine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&q=80" alt="Rose Wine" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 left-12 text-left">
                             <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">New Arrival</span>
@@ -65,14 +65,14 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Accessories" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Accessories" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">ACCESSORIES</h3>
                             </div>
                         </div>
                         {/* Bottom Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&q=80" alt="Gifts" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&q=80" alt="Gifts" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">GIFTS</h3>
                             </div>
@@ -89,14 +89,14 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1535208239377-6a5d7c805214?auto=format&fit=crop&q=80" alt="Limited Edition" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <img src="https://images.unsplash.com/photo-1535208239377-6a5d7c805214?auto=format&fit=crop&q=80" alt="Limited Edition" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">LIMITED EDITION</h3>
                             </div>
                         </div>
                         {/* Bottom Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1566978415951-527bf632906e?auto=format&fit=crop&q=80" alt="Sommelier Pouring" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <img src="https://images.unsplash.com/photo-1566978415951-527bf632906e?auto=format&fit=crop&q=80" alt="Sommelier Pouring" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">SOMMELIER'S PICK</h3>
                             </div>
@@ -105,7 +105,7 @@ const Home = () => {
 
                     {/* Large Feature - Right (2/3) */}
                     <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&q=80" alt="Vintage Vault" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&q=80" alt="Vintage Vault" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 right-12 text-right">
                             <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Exclusive</span>
@@ -124,7 +124,7 @@ const Home = () => {
 
                     {/* Large Feature - Left (2/3) */}
                     <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1474722883778-792e7992910e?auto=format&fit=crop&q=80" alt="Aging Barrels" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="https://images.unsplash.com/photo-1474722883778-792e7992910e?auto=format&fit=crop&q=80" alt="Aging Barrels" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 left-12 text-left">
                             <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Curator's Choice</span>
@@ -137,7 +137,7 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80" alt="Vineyard Estate" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80" alt="Vineyard Estate" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">ESTATES</h3>
                             </div>
@@ -165,33 +165,6 @@ const Home = () => {
                     <span className="text-xl md:text-2xl font-serif uppercase">BAZAAR</span>
                 </div>
             </section>
-
-            {/* 8. Social & Subscribe Section */}
-            <section className="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
-                {/* Left: Instagram Feed */}
-                <div className="bg-surface/50 p-12 md:p-24 flex flex-col justify-center">
-                    <h3 className="text-primary text-2xl font-heading mb-2">Follow us on Instagram</h3>
-                    <a href="#" className="text-accent text-lg mb-12 block hover:text-white transition-colors">@vinotheque_official</a>
-                    <div className="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&q=80" alt="Instagram 1" className="w-full aspect-square object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" />
-                        <img src="https://images.unsplash.com/photo-1551751299-1b51cab2694c?auto=format&fit=crop&q=80" alt="Instagram 2" className="w-full aspect-square object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" />
-                        <img src="https://images.unsplash.com/photo-1528823872057-9c0182e68c43?auto=format&fit=crop&q=80" alt="Instagram 3" className="w-full aspect-square object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" />
-                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80" alt="Instagram 4" className="w-full aspect-square object-cover opacity-80 hover:opacity-100 transition-opacity cursor-pointer" />
-                    </div>
-                </div>
-
-                {/* Right: Subscribe Form */}
-                <div className="bg-surface p-12 md:p-24 flex flex-col justify-center items-center text-center">
-                    <h3 className="text-3xl font-heading text-primary mb-6">Subscribe</h3>
-                    <p className="text-muted mb-8 max-w-md">Sign up with your email address to receive news and updates.</p>
-                    <div className="flex w-full max-w-md gap-4">
-                        <input type="email" placeholder="Email Address" className="flex-1 bg-white p-4 text-black outline-none border-none placeholder-gray-500" />
-                        <button className="bg-vinotheque-mint text-vinotheque-navy font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors whitespace-nowrap">Sign Up</button>
-                    </div>
-                    <p className="text-muted text-xs mt-8">We respect your privacy.</p>
-                </div>
-            </section>
-
 
 
             {/* 4. Split Layout Section */}
@@ -221,14 +194,14 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <article className="cursor-pointer group">
                         <div className="bg-surface aspect-video mb-6 overflow-hidden">
-                            <div className="w-full h-full bg-surface transition-transform duration-700 group-hover:scale-105"></div>
+                            <div className="w-full h-full bg-surface"></div>
                         </div>
                         <span className="text-accent text-[10px] font-bold uppercase tracking-widest">Food & Wine</span>
                         <h3 className="text-xl font-heading font-medium mt-2 mb-3 group-hover:text-muted transition-colors">Pairing for the Perfect Dinner Party</h3>
                     </article>
                     <article className="cursor-pointer group">
                         <div className="bg-surface aspect-video mb-6 overflow-hidden">
-                            <div className="w-full h-full bg-surface transition-transform duration-700 group-hover:scale-105"></div>
+                            <div className="w-full h-full bg-surface"></div>
                         </div>
                         <span className="text-accent text-[10px] font-bold uppercase tracking-widest">Winemaker Series</span>
                         <h3 className="text-xl font-heading font-medium mt-2 mb-3 group-hover:text-muted transition-colors">Interview with The winemaker</h3>
@@ -237,6 +210,32 @@ const Home = () => {
 
                 <div className="mt-12 text-center md:hidden">
                     <a href="/journal" className="text-xs font-bold uppercase tracking-widest text-muted border-b border-muted pb-1">View All Articles</a>
+                </div>
+            </section>
+
+            {/* 8. Social & Subscribe Section */}
+            <section className="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
+                {/* Left: Instagram Feed */}
+                <div className="bg-surface/50 p-12 md:p-24 flex flex-col justify-center">
+                    <h3 className="text-primary text-2xl font-heading mb-2">Follow us on Instagram</h3>
+                    <a href="#" className="text-accent text-lg mb-12 block hover:text-white transition-colors">@vinotheque_official</a>
+                    <div className="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&q=80" alt="Instagram 1" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
+                        <img src="https://images.unsplash.com/photo-1551751299-1b51cab2694c?auto=format&fit=crop&q=80" alt="Instagram 2" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
+                        <img src="https://images.unsplash.com/photo-1528823872057-9c0182e68c43?auto=format&fit=crop&q=80" alt="Instagram 3" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80" alt="Instagram 4" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
+                    </div>
+                </div>
+
+                {/* Right: Subscribe Form */}
+                <div className="bg-surface p-12 md:p-24 flex flex-col justify-center items-center text-center">
+                    <h3 className="text-3xl font-heading text-primary mb-6">Subscribe</h3>
+                    <p className="text-muted mb-8 max-w-md">Sign up with your email address to receive news and updates.</p>
+                    <div className="flex w-full max-w-md gap-4">
+                        <input type="email" placeholder="Email Address" className="flex-1 bg-white p-4 text-black outline-none border-none placeholder-gray-500" />
+                        <button className="bg-vinotheque-mint text-vinotheque-navy font-bold uppercase tracking-widest px-8 py-4 hover:bg-white transition-colors whitespace-nowrap">Sign Up</button>
+                    </div>
+                    <p className="text-muted text-xs mt-8">We respect your privacy.</p>
                 </div>
             </section>
         </div >
