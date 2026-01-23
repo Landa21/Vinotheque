@@ -51,15 +51,36 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
 
                     {/* Large Feature - Left (2/3) */}
-                    <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&q=80" alt="Rose Wine" className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-                        <div className="absolute bottom-12 left-12 text-left">
-                            <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">New Arrival</span>
-                            <h3 className="text-4xl font-heading font-medium text-white mb-4">ROSE GARDEN</h3>
-                            <span className="text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1">Shop Now</span>
-                        </div>
-                    </div>
+                  <div className="md:col-span-2 relative group cursor-pointer h-[90vh] overflow-hidden">
+            {/* 1. The Image */}
+            <img 
+               src="/images/Rose.jpeg" 
+                alt="Rose Wine" 
+                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" 
+            />
+
+            {/* 2. Gradient Overlay (Optional but recommended for text legibility) */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+            {/* 3. The Content Container - Centered at the Bottom */}
+            <div className="absolute bottom-12 inset-x-0 flex flex-col items-center text-center p-6">
+        
+            {/* New Arrival - mb-6 replaces the non-standard mb50 for a clean gap */}
+            <span className="flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                New Arrival
+            </span>
+
+            {/* Heading */}
+        <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-6 tracking-widest">
+            ROSE GARDEN
+        </h3>
+
+        {/* Shop Now Link */}
+        <span className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1 group-hover:text-accent group-hover:border-accent transition-all">
+            Shop Now
+        </span>
+    </div>
+</div>
 
                     {/* Stacked Features - Right (1/3) */}
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
