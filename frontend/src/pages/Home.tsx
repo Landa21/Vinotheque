@@ -147,7 +147,7 @@ const Home = () => {
 
                     {/* Large Feature - Left (2/3) */}
                     <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1474722883778-792e7992910e?auto=format&fit=crop&q=80" alt="Aging Barrels" className="w-full h-full object-cover" />
+                        <img src="/images/aging.jpeg" alt="Aging Barrels" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 left-12 text-left">
                             <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Curator's Choice</span>
@@ -160,7 +160,7 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80" alt="Vineyard Estate" className="w-full h-full object-cover" />
+                            <img src="/images/Estate.jpeg" alt="Estate" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">ESTATES</h3>
                             </div>
