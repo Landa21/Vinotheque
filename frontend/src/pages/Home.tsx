@@ -119,7 +119,7 @@ const Home = () => {
                         </div>
                         {/* Bottom Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1566978415951-527bf632906e?auto=format&fit=crop&q=80" alt="Sommelier Pouring" className="w-full h-full object-cover" />
+                            <img src="/images/pour3.jpeg" alt="White Wine" className="w-full h-full object-contain"/>
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">SOMMELIER'S PICK</h3>
                             </div>
@@ -128,7 +128,7 @@ const Home = () => {
 
                     {/* Large Feature - Right (2/3) */}
                     <div className="md:col-span-2 relative group cursor-pointer h-[90vh]">
-                        <img src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&q=80" alt="Vintage Vault" className="w-full h-full object-cover" />
+                        <img src="/images/vintage3.jpeg" alt="Vintage Vault" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 right-12 text-right">
                             <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Exclusive</span>
