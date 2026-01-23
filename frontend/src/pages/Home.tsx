@@ -54,9 +54,9 @@ const Home = () => {
                   <div className="md:col-span-2 relative group cursor-pointer h-[90vh] overflow-hidden">
             {/* 1. The Image */}
             <img 
-               src="/images/Rose.jpeg" 
+               src="/images/Rose4.png"
                 alt="Rose Wine" 
-                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
             />
 
             {/* 2. Gradient Overlay (Optional but recommended for text legibility) */}
@@ -86,14 +86,16 @@ const Home = () => {
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
                         {/* Top Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Accessories" className="w-full h-full object-cover" />
+                            <img src="/images/accessories.jpeg" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">ACCESSORIES</h3>
                             </div>
                         </div>
                         {/* Bottom Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&q=80" alt="Gifts" className="w-full h-full object-cover" />
+                            <img
+                             src="/images/GiftBox3.jpeg"
+                              className="w-full h-full object-cover"/>
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">GIFTS</h3>
                             </div>
