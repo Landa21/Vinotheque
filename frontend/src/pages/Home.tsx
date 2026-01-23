@@ -13,7 +13,7 @@ const Home = () => {
 
                     {/* Left Feature (e.g. Red Wines) */}
                     <div className="relative group cursor-pointer h-[80vh]">
-                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80" alt="Red Wine" className="w-full h-full object-cover" />
+                        <img src="/images/redbottle.jpeg" alt="Red" className="w-full h-full object-cover"/>
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                             <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-4 tracking-widest">RED WINES</h3>
