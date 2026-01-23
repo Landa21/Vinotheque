@@ -119,7 +119,7 @@ const Home = () => {
                         </div>
                         {/* Bottom Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="/images/pour3.jpeg" alt="White Wine" className="w-full h-full object-contain"/>
+                            <img src="/images/whitepour.jpeg" alt="White Wine" className="w-full h-full object-cover"/>
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">SOMMELIER'S PICK</h3>
                             </div>
