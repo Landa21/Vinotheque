@@ -181,11 +181,11 @@ const Home = () => {
             <section className="py-24 px-6 text-center border-b border-white/10">
                 <h3 className="text-primary text-2xl font-heading mb-16">They talk about us</h3>
                 <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                    <span className="text-2xl md:text-4xl font-serif">VOGUE</span>
-                    <span className="text-2xl md:text-4xl font-bold tracking-tighter">MiLK</span>
-                    <span className="text-2xl md:text-3xl font-serif italic">KiDS</span>
-                    <span className="text-xl md:text-3xl font-cursive">Enfants Terribles</span>
-                    <span className="text-xl md:text-2xl font-serif uppercase">BAZAAR</span>
+                    <span className="text-2xl md:text-4xl font-serif">VINVENTIONS</span>
+                    <span className="text-2xl md:text-4xl font-bold tracking-tighter">AM VYNEYARDS</span>
+                    <span className="text-2xl md:text-3xl font-serif italic">VINPRO</span>
+                    <span className="text-xl md:text-3xl font-cursive">WIETA</span>
+                    <span className="text-xl md:text-2xl font-serif uppercase">SAWIS</span>
                 </div>
             </section>
 
@@ -207,34 +207,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* 5. Journal Preview */}
-            <section className="py-24 px-6 max-w-screen-xl mx-auto">
-                <div className="flex justify-between items-end mb-12">
-                    <h2 className="text-3xl font-heading font-medium text-primary">THE JOURNAL</h2>
-                    <a href="/journal" className="hidden md:block text-xs font-bold uppercase tracking-widest text-muted hover:text-primary transition-colors">View All Articles</a>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <article className="cursor-pointer group">
-                        <div className="bg-surface aspect-video mb-6 overflow-hidden">
-                            <div className="w-full h-full bg-surface"></div>
-                        </div>
-                        <span className="text-accent text-[10px] font-bold uppercase tracking-widest">Food & Wine</span>
-                        <h3 className="text-xl font-heading font-medium mt-2 mb-3 group-hover:text-muted transition-colors">Pairing for the Perfect Dinner Party</h3>
-                    </article>
-                    <article className="cursor-pointer group">
-                        <div className="bg-surface aspect-video mb-6 overflow-hidden">
-                            <div className="w-full h-full bg-surface"></div>
-                        </div>
-                        <span className="text-accent text-[10px] font-bold uppercase tracking-widest">Winemaker Series</span>
-                        <h3 className="text-xl font-heading font-medium mt-2 mb-3 group-hover:text-muted transition-colors">Interview with The winemaker</h3>
-                    </article>
-                </div>
-
-                <div className="mt-12 text-center md:hidden">
-                    <a href="/journal" className="text-xs font-bold uppercase tracking-widest text-muted border-b border-muted pb-1">View All Articles</a>
-                </div>
-            </section>
+            
 
             {/* 8. Social & Subscribe Section */}
             <section className="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
@@ -245,7 +218,7 @@ const Home = () => {
                     <div className="grid grid-cols-2 gap-4">
                         <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&q=80" alt="Instagram 1" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
                         <img src="https://images.unsplash.com/photo-1551751299-1b51cab2694c?auto=format&fit=crop&q=80" alt="Instagram 2" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
-                        <img src="https://images.unsplash.com/photo-1528823872057-9c0182e68c43?auto=format&fit=crop&q=80" alt="Instagram 3" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
+                        <img src="/images/GLASSSTRAW.jpeg" alt="Instagram 3" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
                         <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80" alt="Instagram 4" className="w-full aspect-square object-cover opacity-80 cursor-pointer" />
                     </div>
                 </div>
