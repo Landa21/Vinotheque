@@ -12,7 +12,7 @@ const FreeDeliveryBanner = () => {
       <div className="flex items-center space-x-2 group">
         <Truck className="w-5 h-5 text-white" />
         <span className="text-white">
-          Free Delivery on Orders Over R1000
+          Free Delivery on Orders Over R2500
         </span>
       </div>
 

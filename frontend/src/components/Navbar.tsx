@@ -1,3 +1,5 @@
+import { ShoppingCart } from "lucide-react";
+
 const Navbar = () => {
   return (
     <nav className="absolute top-[40px] left-0 w-full z-40 flex items-center justify-between px-10 py-6 text-white bg-transparent">
@@ -15,7 +17,7 @@ const Navbar = () => {
           About
         </a>
         <a href="/cart" className="hover:opacity-70 transition">
-          Cart
+          <ShoppingCart />
         </a>
       </div>
     </nav>
