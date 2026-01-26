@@ -142,6 +142,18 @@ const wines = [
 ];
 
 const Shop = () => {
+    const [currentPage, setCurrentPage] = React.useState(1);
+    const itemsPerPage = 12;
+
+    const totalPages = Math.ceil(wines.length / itemsPerPage);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const currentWines = wines.slice(startIndex, startIndex + itemsPerPage);
+
+    const handlePageChange = (pageNumber: number) => {
+        setCurrentPage(pageNumber);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className="pt-24 pb-16 px-6 max-w-[1400px] mx-auto">
             <div className="mb-16 text-center">
@@ -150,24 +162,64 @@ const Shop = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-                {wines.map((wine, index) => (
-                    <div key={index} className="group cursor-pointer">
-                        <div className="bg-surface aspect-[3/4] mb-4 relative overflow-hidden">
+                {currentWines.map((wine, index) => (
+                    <div key={index} className="group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/20 rounded-lg p-2 flex flex-col items-center">
+                        <div className="bg-surface w-full aspect-[3/4] mb-4 relative overflow-hidden rounded-md">
                             <img
                                 src={wine.image}
                                 alt={wine.name}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                             />
-                            <div className="absolute inset-x-0 bottom-0 bg-surface/90 py-3 text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                <button className="text-xs font-bold uppercase tracking-widest text-primary hover:text-accent">Add to Cart</button>
+                            <div className="absolute inset-x-0 bottom-0 bg-surface/95 py-4 text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out border-t border-accent/20">
+                                <button className="text-xs font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors">Add to Cart</button>
                             </div>
                         </div>
-                        <h3 className="font-heading text-lg font-medium text-center text-primary leading-tight mb-1">{wine.name}</h3>
-                        <p className="text-center text-xs font-bold tracking-widest text-accent uppercase mb-2">{wine.producer}</p>
-                        <p className="text-center text-muted text-sm">{wine.price}</p>
+                        <h3 className="font-heading text-lg font-medium text-center text-primary leading-tight mb-1 group-hover:text-accent transition-colors">{wine.name}</h3>
+                        <p className="text-center text-xs font-bold tracking-widest text-muted uppercase mb-2">{wine.producer}</p>
+                        <p className="text-center text-primary/80 text-sm font-light">{wine.price}</p>
                     </div>
                 ))}
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+                <div className="mt-16 flex justify-center items-center space-x-2">
+                    <button
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className={`px-4 py-2 border border-primary/20 text-primary transition-all duration-300 rounded-md ${currentPage === 1
+                                ? 'opacity-50 cursor-not-allowed'
+                                : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
+                            }`}
+                    >
+                        Previous
+                    </button>
+
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                        <button
+                            key={page}
+                            onClick={() => handlePageChange(page)}
+                            className={`w-10 h-10 flex items-center justify-center border transition-all duration-300 rounded-md ${currentPage === page
+                                    ? 'bg-primary text-background border-primary scale-110 font-bold shadow-lg shadow-white/10'
+                                    : 'border-primary/20 text-primary hover:bg-primary/10 hover:border-primary/50 hover:scale-110 active:scale-95'
+                                }`}
+                        >
+                            {page}
+                        </button>
+                    ))}
+
+                    <button
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        className={`px-4 py-2 border border-primary/20 text-primary transition-all duration-300 rounded-md ${currentPage === totalPages
+                                ? 'opacity-50 cursor-not-allowed'
+                                : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
+                            }`}
+                    >
+                        Next
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
