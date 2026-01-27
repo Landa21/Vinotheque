@@ -29,15 +29,15 @@ const Footer = () => {
                 {/* Legal Warning - Crucial for Winery Sites */}
                 <div className="mb-12 max-w-2xl border-y border-white/5 py-6">
                     <p className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-muted leading-relaxed">
-                        Enjoy Responsibly. You must be of legal drinking age in your country to purchase alcohol. 
-                        Vinotheque supports the responsible service of alcohol. 
+                        Enjoy Responsibly. You must be of legal drinking age in your country to purchase alcohol.
+                        Vinotheque supports the responsible service of alcohol.
                     </p>
                 </div>
 
                 {/* Main Navigation Links */}
                 <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] md:text-xs font-bold uppercase tracking-[0.15em] text-white mb-12">
                     <a href="/contact" className="hover:text-vinotheque-mint transition-colors">CONTACT & WHOLESALE</a>
-                    <a href="#" className="hover:text-vinotheque-mint transition-colors">TERMS AND CONDITIONS</a>
+                    <a href="/terms" className="hover:text-vinotheque-mint transition-colors">TERMS AND CONDITIONS</a>
                     <a href="#" className="hover:text-vinotheque-mint transition-colors">DELIVERY & RETURNS</a>
                     <a href="#" className="hover:text-vinotheque-mint transition-colors">PRIVACY POLICY</a>
                 </div>
@@ -47,7 +47,7 @@ const Footer = () => {
                     <p className="text-[10px] text-muted tracking-widest uppercase">
                         © {currentYear} Vinotheque. All Rights Reserved.
                     </p>
-                    
+
                     {/* Payment Indicators */}
                     <div className="flex items-center gap-x-4 opacity-50 grayscale hover:grayscale-0 transition-all">
                         <CreditCard className="w-5 h-5 text-white" />
