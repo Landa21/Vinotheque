@@ -10,6 +10,7 @@ import Journal from "./pages/Journal";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import DeliveryAndReturns from "./pages/DeliveryAndReturns";
 
 
 // Check if we are on the home page to conditionally render header/footer style if needed
@@ -39,6 +40,8 @@ function App() {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/terms" element={<TermsAndConditions />} />
+                        <Route path="/delivery-returns" element={<DeliveryAndReturns />} />
+
 
                     </Routes>
                 </main>

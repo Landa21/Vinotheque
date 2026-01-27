@@ -38,7 +38,7 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] md:text-xs font-bold uppercase tracking-[0.15em] text-white mb-12">
                     <a href="/contact" className="hover:text-vinotheque-mint transition-colors">CONTACT & WHOLESALE</a>
                     <a href="/terms" className="hover:text-vinotheque-mint transition-colors">TERMS AND CONDITIONS</a>
-                    <a href="#" className="hover:text-vinotheque-mint transition-colors">DELIVERY & RETURNS</a>
+                    <a href="/delivery-returns" className="hover:text-vinotheque-mint transition-colors">DELIVERY & RETURNS</a>
                     <a href="#" className="hover:text-vinotheque-mint transition-colors">PRIVACY POLICY</a>
                 </div>
 
