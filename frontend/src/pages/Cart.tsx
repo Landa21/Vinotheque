@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { useCart } from '../context/CartContext';
-import { Trash2 } from 'lucide-react';
+import { Trash2, Minus, Plus } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-    const { cartItems, removeFromCart } = useCart();
+    const { cartItems, removeFromCart, updateQuantity } = useCart();
 
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => {
@@ -55,8 +55,26 @@ const Cart = () => {
                                     <p className="text-sm text-muted uppercase tracking-wider">{item.producer}</p>
                                 </div>
                                 <div className="flex justify-between items-end">
-                                    <div className="text-sm text-muted">
-                                        Quantity: <span className="text-primary font-bold">{item.quantity}</span>
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-sm text-muted">Quantity:</span>
+                                        <div className="flex items-center border border-white/10 rounded-md">
+                                            <button
+                                                onClick={() => updateQuantity(item.name, item.quantity - 1)}
+                                                disabled={item.quantity <= 1}
+                                                className="p-1.5 hover:bg-white/10 disabled:opacity-50 transition-colors"
+                                                data-testid={`decrease-${item.name}`}
+                                            >
+                                                <Minus size={14} />
+                                            </button>
+                                            <span className="px-2 font-bold min-w-[1.5rem] text-center text-primary">{item.quantity}</span>
+                                            <button
+                                                onClick={() => updateQuantity(item.name, item.quantity + 1)}
+                                                className="p-1.5 hover:bg-white/10 transition-colors"
+                                                data-testid={`increase-${item.name}`}
+                                            >
+                                                <Plus size={14} />
+                                            </button>
+                                        </div>
                                     </div>
                                     <div className="text-lg font-bold text-primary">{item.price}</div>
                                 </div>
