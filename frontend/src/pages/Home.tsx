@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 
 const Home = () => {
@@ -76,9 +77,9 @@ const Home = () => {
                             </h3>
 
                             {/* Shop Now Link */}
-                            <span className="flex items-center gap-2 text-white text-base font-extrabold uppercase tracking-widest border-b-2 border-white pb-1 group-hover:text-gray-200 group-hover:border-gray-200 transition-all drop-shadow-md">
+                            <Link to="/rose-garden" className="flex items-center gap-2 text-white text-base font-extrabold uppercase tracking-widest border-b-2 border-white pb-1 group-hover:text-gray-200 group-hover:border-gray-200 transition-all drop-shadow-md">
                                 Shop Now
-                            </span>
+                            </Link>
                         </div>
                     </div>
 
