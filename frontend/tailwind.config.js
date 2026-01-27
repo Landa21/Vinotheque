@@ -13,6 +13,7 @@ export default {
         primary: "#F5F5F5",
         muted: "#B3B3B3",
         accent: "#6B1F2B",
+        accentLight: "#8B2E3E",
         accentHover: "#541923",
         border: "#2A2A2A",
       },

@@ -8,6 +8,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Journal from "./pages/Journal";
 import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
 
 // Check if we are on the home page to conditionally render header/footer style if needed
 // For now, we apply standard dark theme layout everywhere
@@ -34,6 +35,7 @@ function App() {
                         <Route path="/about" element={<About />} />
                         <Route path="/journal" element={<Journal />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/cart" element={<Cart />} />
                     </Routes>
                 </main>
 

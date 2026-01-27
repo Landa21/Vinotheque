@@ -1,4 +1,5 @@
 import React from 'react';
+import { useCart } from '../context/CartContext';
 
 const wines = [
     {
@@ -143,6 +144,7 @@ const wines = [
 
 const Shop = () => {
     const [currentPage, setCurrentPage] = React.useState(1);
+    const { addToCart } = useCart();
     const itemsPerPage = 12;
 
     const totalPages = Math.ceil(wines.length / itemsPerPage);
@@ -163,7 +165,7 @@ const Shop = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                 {currentWines.map((wine, index) => (
-                    <div key={index} className="group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/20 rounded-lg p-2 flex flex-col items-center">
+                    <div key={index} className="group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-500/20 rounded-lg p-2 flex flex-col items-center">
                         <div className="bg-surface w-full aspect-[3/4] mb-4 relative overflow-hidden rounded-md">
                             <img
                                 src={wine.image}
@@ -171,10 +173,20 @@ const Shop = () => {
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                             />
                             <div className="absolute inset-x-0 bottom-0 bg-surface/95 py-4 text-center translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out border-t border-accent/20">
-                                <button className="text-xs font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors">Add to Cart</button>
+                                <button
+                                    onClick={() => addToCart({
+                                        name: wine.name,
+                                        producer: wine.producer,
+                                        price: wine.price,
+                                        image: wine.image
+                                    })}
+                                    className="text-xs font-bold uppercase tracking-widest text-primary hover:text-accentLight transition-colors"
+                                >
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
-                        <h3 className="font-heading text-lg font-medium text-center text-primary leading-tight mb-1 group-hover:text-accent transition-colors">{wine.name}</h3>
+                        <h3 className="font-heading text-lg font-medium text-center text-primary leading-tight mb-1 group-hover:text-accentLight transition-colors">{wine.name}</h3>
                         <p className="text-center text-xs font-bold tracking-widest text-muted uppercase mb-2">{wine.producer}</p>
                         <p className="text-center text-primary/80 text-sm font-light">{wine.price}</p>
                     </div>
@@ -188,8 +200,8 @@ const Shop = () => {
                         onClick={() => handlePageChange(currentPage - 1)}
                         disabled={currentPage === 1}
                         className={`px-4 py-2 border border-primary/20 text-primary transition-all duration-300 rounded-md ${currentPage === 1
-                                ? 'opacity-50 cursor-not-allowed'
-                                : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
+                            ? 'opacity-50 cursor-not-allowed'
+                            : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
                             }`}
                     >
                         Previous
@@ -200,8 +212,8 @@ const Shop = () => {
                             key={page}
                             onClick={() => handlePageChange(page)}
                             className={`w-10 h-10 flex items-center justify-center border transition-all duration-300 rounded-md ${currentPage === page
-                                    ? 'bg-primary text-background border-primary scale-110 font-bold shadow-lg shadow-white/10'
-                                    : 'border-primary/20 text-primary hover:bg-primary/10 hover:border-primary/50 hover:scale-110 active:scale-95'
+                                ? 'bg-primary text-background border-primary scale-110 font-bold shadow-lg shadow-white/10'
+                                : 'border-primary/20 text-primary hover:bg-primary/10 hover:border-primary/50 hover:scale-110 active:scale-95'
                                 }`}
                         >
                             {page}
@@ -212,8 +224,8 @@ const Shop = () => {
                         onClick={() => handlePageChange(currentPage + 1)}
                         disabled={currentPage === totalPages}
                         className={`px-4 py-2 border border-primary/20 text-primary transition-all duration-300 rounded-md ${currentPage === totalPages
-                                ? 'opacity-50 cursor-not-allowed'
-                                : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
+                            ? 'opacity-50 cursor-not-allowed'
+                            : 'hover:bg-primary hover:text-background hover:scale-105 active:scale-95 shadow-sm hover:shadow-primary/20'
                             }`}
                     >
                         Next
@@ -225,3 +237,5 @@ const Shop = () => {
 };
 
 export default Shop;
+
+

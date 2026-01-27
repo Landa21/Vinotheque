@@ -13,7 +13,7 @@ const Home = () => {
 
                     {/* Left Feature (e.g. Red Wines) */}
                     <div className="relative group cursor-pointer h-[80vh]">
-                        <img src="/images/redbottle.jpeg" alt="Red" className="w-full h-full object-cover"/>
+                        <img src="/images/redbottle.jpeg" alt="Red" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                             <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-4 tracking-widest">RED WINES</h3>
@@ -51,36 +51,36 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
 
                     {/* Large Feature - Left (2/3) */}
-                  <div className="md:col-span-2 relative group cursor-pointer h-[90vh] overflow-hidden">
-            {/* 1. The Image */}
-            <img 
-               src="/images/Rose4.png"
-                alt="Rose Wine" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-            />
+                    <div className="md:col-span-2 relative group cursor-pointer h-[90vh] overflow-hidden">
+                        {/* 1. The Image */}
+                        <img
+                            src="/images/Rose4.png"
+                            alt="Rose Wine"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
 
-            {/* 2. Gradient Overlay (Optional but recommended for text legibility) */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        {/* 2. Gradient Overlay (Optional but recommended for text legibility) */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
-            {/* 3. The Content Container - Centered at the Bottom */}
-            <div className="absolute bottom-12 inset-x-0 flex flex-col items-center text-center p-6">
-        
-            {/* New Arrival - mb-6 replaces the non-standard mb50 for a clean gap */}
-            <span className="flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-6">
-                New Arrival
-            </span>
+                        {/* 3. The Content Container - Centered at the Bottom */}
+                        <div className="absolute bottom-12 inset-x-0 flex flex-col items-center text-center p-6">
 
-            {/* Heading */}
-        <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-6 tracking-widest">
-            ROSE GARDEN
-        </h3>
+                            {/* New Arrival - mb-6 replaces the non-standard mb50 for a clean gap */}
+                            <span className="flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                                New Arrival
+                            </span>
 
-        {/* Shop Now Link */}
-        <span className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1 group-hover:text-accent group-hover:border-accent transition-all">
-            Shop Now
-        </span>
-    </div>
-</div>
+                            {/* Heading */}
+                            <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-6 tracking-widest">
+                                ROSE GARDEN
+                            </h3>
+
+                            {/* Shop Now Link */}
+                            <span className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1 group-hover:text-accent group-hover:border-accent transition-all">
+                                Shop Now
+                            </span>
+                        </div>
+                    </div>
 
                     {/* Stacked Features - Right (1/3) */}
                     <div className="md:col-span-1 flex flex-col h-[90vh]">
@@ -94,8 +94,8 @@ const Home = () => {
                         {/* Bottom Right */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
                             <img
-                             src="/images/GiftBox3.jpeg"
-                              className="w-full h-full object-cover"/>
+                                src="/images/GiftBox3.jpeg"
+                                className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">GIFTS</h3>
                             </div>
@@ -119,7 +119,7 @@ const Home = () => {
                         </div>
                         {/* Bottom Left */}
                         <div className="relative group cursor-pointer h-1/2 overflow-hidden">
-                            <img src="/images/whitepour.jpeg" alt="White Wine" className="w-full h-full object-cover"/>
+                            <img src="/images/whitepour.jpeg" alt="White Wine" className="w-full h-full object-cover" />
                             <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
                                 <h3 className="text-2xl font-heading font-medium text-white tracking-widest">SOMMELIER'S PICK</h3>
                             </div>
@@ -207,7 +207,7 @@ const Home = () => {
                 </div>
             </section>
 
-            
+
 
             {/* 8. Social & Subscribe Section */}
             <section className="grid grid-cols-1 md:grid-cols-2 border-b border-white/10">
