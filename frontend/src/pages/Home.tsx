@@ -131,7 +131,7 @@ const Home = () => {
                         <img src="/images/vintage3.jpeg" alt="Vintage Vault" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 right-12 text-right">
-                            <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Exclusive</span>
+                            <span className="text-white text-xs font-bold uppercase tracking-widest mb-2 block">Exclusive</span>
                             <h3 className="text-4xl font-heading font-medium text-white mb-4">VINTAGE VAULT</h3>
                             <div className="flex justify-end">
                                 <span className="text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1">Discover</span>
@@ -150,7 +150,7 @@ const Home = () => {
                         <img src="/images/aging.jpeg" alt="Aging Barrels" className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
                         <div className="absolute bottom-12 left-12 text-left">
-                            <span className="text-accent text-xs font-bold uppercase tracking-widest mb-2 block">Curator's Choice</span>
+                            <span className="text-white text-xs font-bold uppercase tracking-widest mb-2 block">Curator's Choice</span>
                             <h3 className="text-4xl font-heading font-medium text-white mb-4">THE ART OF AGING</h3>
                             <span className="text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1">Learn More</span>
                         </div>
@@ -190,8 +190,8 @@ const Home = () => {
             </section>
 
 
-         
-       
+
+
 
 
             {/* 8. Social & Subscribe Section */}
