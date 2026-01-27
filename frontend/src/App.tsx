@@ -11,6 +11,8 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import DeliveryAndReturns from "./pages/DeliveryAndReturns";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 
 
 // Check if we are on the home page to conditionally render header/footer style if needed
@@ -41,6 +43,8 @@ function App() {
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/terms" element={<TermsAndConditions />} />
                         <Route path="/delivery-returns" element={<DeliveryAndReturns />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
 
 
                     </Routes>

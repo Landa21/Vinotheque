@@ -39,7 +39,7 @@ const Footer = () => {
                     <a href="/contact" className="hover:text-vinotheque-mint transition-colors">CONTACT & WHOLESALE</a>
                     <a href="/terms" className="hover:text-vinotheque-mint transition-colors">TERMS AND CONDITIONS</a>
                     <a href="/delivery-returns" className="hover:text-vinotheque-mint transition-colors">DELIVERY & RETURNS</a>
-                    <a href="#" className="hover:text-vinotheque-mint transition-colors">PRIVACY POLICY</a>
+                    <a href="/privacy-policy" className="hover:text-vinotheque-mint transition-colors">PRIVACY POLICY</a>
                 </div>
 
                 {/* Bottom Row: Copyright & Payment Mockup */}
