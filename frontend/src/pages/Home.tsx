@@ -66,17 +66,17 @@ const Home = () => {
                         <div className="absolute bottom-12 inset-x-0 flex flex-col items-center text-center p-6">
 
                             {/* New Arrival - mb-6 replaces the non-standard mb50 for a clean gap */}
-                            <span className="flex items-center gap-2 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                            <span className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest mb-6 drop-shadow-md">
                                 New Arrival
                             </span>
 
                             {/* Heading */}
-                            <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-6 tracking-widest">
+                            <h3 className="text-4xl md:text-5xl font-heading font-medium text-white mb-6 tracking-widest drop-shadow-lg">
                                 ROSE GARDEN
                             </h3>
 
                             {/* Shop Now Link */}
-                            <span className="flex items-center gap-2 text-white text-sm font-bold uppercase tracking-widest border-b border-white pb-1 group-hover:text-accent group-hover:border-accent transition-all">
+                            <span className="flex items-center gap-2 text-white text-base font-extrabold uppercase tracking-widest border-b-2 border-white pb-1 group-hover:text-gray-200 group-hover:border-gray-200 transition-all drop-shadow-md">
                                 Shop Now
                             </span>
                         </div>
@@ -190,23 +190,8 @@ const Home = () => {
             </section>
 
 
-            {/* 4. Split Layout Section */}
-            <section className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] border-t border-b border-border">
-                <div className="bg-surface flex items-center justify-center p-0 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80" alt="Grapes" className="w-full h-full object-cover absolute inset-0 opacity-60" />
-                </div>
-                <div className="flex flex-col justify-center px-12 py-20 text-center md:text-left">
-                    <span className="text-accent text-xs font-bold uppercase tracking-widest mb-4">Our Philosophy</span>
-                    <h2 className="text-3xl md:text-4xl font-heading font-medium mb-6 text-primary">SUSTAINABLE & ORGANIC</h2>
-                    <p className="text-muted leading-relaxed mb-8 max-w-md">
-                        We believe that great wine starts in the vineyard. That's why we partner exclusively with estates that practice sustainable, organic, and biodynamic farming. Respecting the land ensures a purer expression of the grape in your glass.
-                    </p>
-                    <a href="/about" className="self-center md:self-start border-b border-white pb-1 text-sm font-bold uppercase tracking-widest hover:text-accent hover:border-accent transition-colors">
-                        Read Our Story
-                    </a>
-                </div>
-            </section>
-
+         
+       
 
 
             {/* 8. Social & Subscribe Section */}
