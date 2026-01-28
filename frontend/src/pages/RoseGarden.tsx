@@ -3,26 +3,26 @@ import { useCart } from '../context/CartContext';
 
 const roseWines = [
     {
-        name: "Morning Mist Rosé '24",
-        producer: "Alinea",
+        name: "Two Sisters Rosé",
+        producer: "Two Sisters Vineyards",
         price: "R 285.00",
-        image: "/images/Rose4.png"
+        image: "/images/Rose collection 1.jpeg"
     },
     {
-        name: "Sarel at the Beach Rosé '23",
-        producer: "Nomad Wines",
+        name: "Domaine de Pontfract Rosé",
+        producer: "Les Vins Bréban",
         price: "R 293.00",
-        image: "/images/SarelattheBeachProductImage.webp"
+        image: "/images/RoseCollection2.jpeg"
     },
     {
-        name: "Alinea Grenache Rosé '24",
-        producer: "Natasha Jacka",
+        name: "Craggy Range Rose",
+        producer: "Ben Tombs.",
         price: "R 323.00",
-        image: "/images/ALINEA_GRENACHE.webp"
+        image: "/images/RoseCollection3.jpeg"
     },
     {
-        name: "Summer Whisper '24",
-        producer: "Testalonga",
+        name: "Artisanal Selection Rosé",
+        producer: "Studio Floral",
         price: "R 315.00",
         image: "/images/Rose4.png"
     }
